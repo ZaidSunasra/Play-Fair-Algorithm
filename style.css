@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 5rem;
+    font-style: normal;
+}
+
+.landing-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+}
+
+input,
+button,
+body {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+input,
+button {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+}
+
+#solution {
+    display: none;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    background-color: black;
+    border: 5px solid black;
+}
+
+.container {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#solution {
+    /* display: flex; */
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 30%;
+}
+
+@media (max-width:1075px) {
+
+    input,
+    button,
+    body,
+    .container {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .landing-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction {
+        width: 60%;
+    }
+
+    #landing {
+        gap: 0px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #solution {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .result {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 690px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .introduction {
+        width: 70%;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .introduction {
+        width: 90%;
+    }
+}
+
+@media (max-width: 475px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .introduction,
+    .input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    input,
+    button,
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 310px) {
+    h1{
+        font-size: 1.5rem;
+    }
+}

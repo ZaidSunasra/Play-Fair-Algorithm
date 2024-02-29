@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Play Fair Algorithm</title>
+</head>
+
+<body>
+    <section id="landing">
+
+        <div class="title">
+            <h1>Play Fair Algorithm</h1>
+        </div>
+
+        <div class="landing-wrapper">
+
+            <div class="introduction">
+                <p>
+                    The Playfair cipher is a cryptographic technique that employs a 5x5 grid of letters to encrypt pairs
+                    of letters in plaintext. It is known for its simplicity and effectiveness in encrypting messages,
+                    using rules for handling certain edge cases, like repeated letters in the plaintext.
+                </p>
+            </div>
+
+            <div id="input" class="input">
+                <input type="text" id="messageBox" name="messageBox" placeholder="Enter your message" required>
+                <input type="text" name="keyBox" id="keyBox" placeholder="Enter key" required>
+                <button onclick="playFairAlgo()"> Generate Ciphertext </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="solution">
+
+            <div id="grid">
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+            </div>
+
+            <div id="result" class="result">
+                <div id="message"></div>
+                <div id="cipher"></div>
+            </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
