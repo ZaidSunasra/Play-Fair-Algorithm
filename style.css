@@ -71,10 +71,6 @@ button {
     width: 400px;
 }
 
-#solution {
-    display: none;
-}
-
 #grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -96,7 +92,7 @@ button {
 }
 
 #solution {
-    /* display: flex; */
+    display: none;
     height: 100vh;
     justify-content: space-around;
     align-items: center;
@@ -105,8 +101,7 @@ button {
 .result {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 200px;
+    gap: 20px;
     width: 30%;
 }
 
@@ -145,6 +140,7 @@ button {
     #solution {
         flex-direction: column;
         justify-content: center;
+        gap: 30px;
     }
 
     .result {
