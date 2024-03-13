@@ -4,16 +4,12 @@ function playFairAlgo() {
     let key = document.getElementById("keyBox").value;
     let editedKey = key.toUpperCase().replaceAll(/[^A-Z]/g, "").replaceAll("J", "I");
     let editedmessage = message.toUpperCase().replaceAll(/[^A-Z]/g, "").replaceAll("J", "I");
-
     // Update sections
     updateSection();
-
     // Creates a grid for playfair Cipher
     let finalGrid = fillGrid(editedKey);
-
     // Generates cipher
     let cipher = generateCipher(finalGrid, editedmessage);
-
     // Printing result
     updateDom(finalGrid, message, cipher);
 }
